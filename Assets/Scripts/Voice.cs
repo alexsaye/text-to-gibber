@@ -17,10 +17,10 @@ public class Voice : MonoBehaviour
     private Intonation intonation;
 
     [Tooltip("Delay between characters. (seconds)")]
-    public float CharacterDelay = 0.3f;
+    public float CharacterDelay = 0.1f;
 
     [Tooltip("Delay between words. (seconds)")]
-    public float WordDelay = 0.5f;
+    public float WordDelay = 0.2f;
 
     [Tooltip("Scalar speed at which to speak the text, where 1 is normal speed.")]
     public float Tempo = 1.0f;

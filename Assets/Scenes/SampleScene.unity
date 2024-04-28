@@ -250,7 +250,7 @@ MonoBehaviour:
   audioSource: {fileID: 742333082}
   accent: {fileID: 11400000, guid: f3f816b5cdcbed143baac1895cd45b38, type: 2}
   intonation: {fileID: 11400000, guid: 3b66d56ee52cf284f9fcf72677195a91, type: 2}
-  CharacterDelay: 0.15
+  CharacterDelay: 0.1
   WordDelay: 0.2
   Tempo: 1
 --- !u!82 &742333082
@@ -265,8 +265,8 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.99599016
+  m_Pitch: 2.9418159
   Loop: 0
   Mute: 0
   Spatialize: 0

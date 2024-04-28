@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dda43c7a62420fa448d56e7d7846de98, type: 3}
   m_Name: Intonation
   m_EditorClassIdentifier: 
-  pitch: 2.75
+  pitch: 3
   volume: 1
   inflections:
   - Style: 0

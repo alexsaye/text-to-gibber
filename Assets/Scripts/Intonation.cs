@@ -65,11 +65,11 @@ public class Intonation : ScriptableObject
         {
             var pitchAtTime = inflection.PitchOverTime?.Evaluate(progress) ?? 1f;
             var pitchWobble = UnityEngine.Random.Range(-inflection.PitchWobble, inflection.PitchWobble);
-            source.pitch = pitch + pitchAtTime + pitchWobble;
+            source.pitch = pitch * pitchAtTime + pitchWobble;
 
             var volumeAtTime = inflection.VolumeOverTime?.Evaluate(progress) ?? 1f;
             var volumeWobble = UnityEngine.Random.Range(-inflection.VolumeWobble, inflection.VolumeWobble);
-            source.volume = volume + volumeAtTime + volumeWobble;
+            source.volume = volume * volumeAtTime + volumeWobble;
         }
         else
         {
