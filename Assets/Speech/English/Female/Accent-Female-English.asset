@@ -1,0 +1,67 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6b1f6975f44d0a249a525ac43e7bf626, type: 3}
+  m_Name: Accent-Female-English
+  m_EditorClassIdentifier: 
+  phonemes:
+  - Character: 65
+    Clip: {fileID: 8300000, guid: ab6c4aacefb87804da7d1fbd1a9094fe, type: 3}
+  - Character: 66
+    Clip: {fileID: 8300000, guid: 3c62502367505e143bf289f3914d3d83, type: 3}
+  - Character: 67
+    Clip: {fileID: 8300000, guid: 203b903d9fb406e4da41fd405e8d8e58, type: 3}
+  - Character: 68
+    Clip: {fileID: 8300000, guid: 016acd5a4ba308c41b0892e699a8531e, type: 3}
+  - Character: 69
+    Clip: {fileID: 8300000, guid: 6afeae2e1aaa0de43b7183a6c346ab26, type: 3}
+  - Character: 70
+    Clip: {fileID: 8300000, guid: f0b85cda87f21d94d827cad0b8fa23df, type: 3}
+  - Character: 71
+    Clip: {fileID: 8300000, guid: edf51ed467982e248b5139fb8e4d946e, type: 3}
+  - Character: 72
+    Clip: {fileID: 8300000, guid: 442854d76ea5b60488b4b943c00722b3, type: 3}
+  - Character: 73
+    Clip: {fileID: 8300000, guid: 5761bd006a3ba4347bd5d2fb53f7055a, type: 3}
+  - Character: 74
+    Clip: {fileID: 8300000, guid: 00ebf574eba458548a84ff8c9047a7f5, type: 3}
+  - Character: 75
+    Clip: {fileID: 8300000, guid: 8b920ae5c948e7d48add0ae4f417ab90, type: 3}
+  - Character: 76
+    Clip: {fileID: 8300000, guid: 89015c9dd62febf48b8544a9d5a1a3a1, type: 3}
+  - Character: 77
+    Clip: {fileID: 8300000, guid: 6a59901f03582464f8121a736457d49e, type: 3}
+  - Character: 78
+    Clip: {fileID: 8300000, guid: 771d596c45e64cd46a00a94d9b669f7f, type: 3}
+  - Character: 79
+    Clip: {fileID: 8300000, guid: 2c59851fb46e70347bc84248d18ac817, type: 3}
+  - Character: 80
+    Clip: {fileID: 8300000, guid: 17c62042f750c0b4ead3d69cfcbc816a, type: 3}
+  - Character: 81
+    Clip: {fileID: 8300000, guid: 2635731f1e698fe4eb2901447c1fb360, type: 3}
+  - Character: 82
+    Clip: {fileID: 8300000, guid: 1aba989464ab8384ebbc0294e372b65a, type: 3}
+  - Character: 83
+    Clip: {fileID: 8300000, guid: 79d36560e9cd3ec4680560d0072c6ad8, type: 3}
+  - Character: 84
+    Clip: {fileID: 8300000, guid: 95ba34382ef94b34aad6e05793617fc7, type: 3}
+  - Character: 85
+    Clip: {fileID: 8300000, guid: 408f2966c514f0d4d8ebe684d04d847a, type: 3}
+  - Character: 86
+    Clip: {fileID: 8300000, guid: 07d7f2828ed241640b18ee3306ef8e51, type: 3}
+  - Character: 87
+    Clip: {fileID: 8300000, guid: c5575dc5372cdd843a92a3ca1aa0ee51, type: 3}
+  - Character: 88
+    Clip: {fileID: 8300000, guid: 973b75ab91592c840904cba75f13a90b, type: 3}
+  - Character: 89
+    Clip: {fileID: 8300000, guid: b4938c0fe980cee41814b863a3051baf, type: 3}
+  - Character: 90
+    Clip: {fileID: 8300000, guid: 75dd156e8711c664480e43cb8056da0d, type: 3}

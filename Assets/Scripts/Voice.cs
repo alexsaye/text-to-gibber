@@ -1,5 +1,4 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Voice : MonoBehaviour
@@ -8,13 +7,28 @@ public class Voice : MonoBehaviour
     [Tooltip("AudioSource to play the speech. Will use an attached AudioSource if not set.")]
     private AudioSource audioSource;
 
+    [Header("Language")]
+
     [SerializeField]
     [Tooltip("Pronunciation to use for speaking.")]
     private Accent accent;
 
     [SerializeField]
-    [Tooltip("Intonation.Expression to use for speaking.")]
+    [Tooltip("Intonation to use for speaking.")]
     private Intonation intonation;
+
+    [Header("Character")]
+
+    [SerializeField]
+    [Tooltip("Pitch to use when speaking.")]
+    private float pitch = 1f;
+
+    [SerializeField]
+    [Range(0f, 1f)]
+    [Tooltip("Volume to use when speaking.")]
+    private float volume = 1f;
+
+    [Header("Speed")]
 
     [Tooltip("Delay between characters. (seconds)")]
     public float CharacterDelay = 0.1f;
@@ -70,6 +84,8 @@ public class Voice : MonoBehaviour
             }
             else
             {
+                audioSource.pitch = pitch;
+                audioSource.volume = volume;
                 intonation.Inflect(audioSource, style, index * step);
                 accent.Pronounce(audioSource, character);
                 yield return new WaitForSeconds(CharacterDelay / Tempo);

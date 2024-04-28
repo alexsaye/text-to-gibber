@@ -23,20 +23,16 @@ public class Intonation : ScriptableObject
         [Header("Pitch")]
 
         public AnimationCurve PitchOverTime;
+
         public float PitchWobble = 0.05f;
 
         [Header("Volume")]
 
         public AnimationCurve VolumeOverTime;
 
+        [Range(0f, 1f)]
         public float VolumeWobble = 0.05f;
     }
-
-    [SerializeField]
-    private float pitch = 1f;
-
-    [SerializeField]
-    private float volume = 1f;
 
     [SerializeField]
     [Tooltip("Inflections for each intonation style.")]
@@ -65,16 +61,11 @@ public class Intonation : ScriptableObject
         {
             var pitchAtTime = inflection.PitchOverTime?.Evaluate(progress) ?? 1f;
             var pitchWobble = UnityEngine.Random.Range(-inflection.PitchWobble, inflection.PitchWobble);
-            source.pitch = pitch * pitchAtTime + pitchWobble;
+            source.pitch *= pitchAtTime + pitchWobble;
 
             var volumeAtTime = inflection.VolumeOverTime?.Evaluate(progress) ?? 1f;
             var volumeWobble = UnityEngine.Random.Range(-inflection.VolumeWobble, inflection.VolumeWobble);
-            source.volume = volume * volumeAtTime + volumeWobble;
-        }
-        else
-        {
-            source.pitch = pitch;
-            source.volume = volume;
+            source.volume *= volumeAtTime + volumeWobble;
         }
     }
 }
