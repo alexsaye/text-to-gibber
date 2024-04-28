@@ -491,7 +491,7 @@ MonoBehaviour:
   audioSource: {fileID: 1065662907}
   accent: {fileID: 11400000, guid: d47375ada1fe78447aa5611b249355b9, type: 2}
   intonation: {fileID: 11400000, guid: 3b66d56ee52cf284f9fcf72677195a91, type: 2}
-  pitch: 1
+  pitch: 2.4
   volume: 1
   CharacterDelay: 0.1
   WordDelay: 0.2
