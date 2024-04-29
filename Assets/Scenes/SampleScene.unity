@@ -252,9 +252,9 @@ MonoBehaviour:
   intonation: {fileID: 11400000, guid: 3b66d56ee52cf284f9fcf72677195a91, type: 2}
   pitch: 2.4
   volume: 1
-  CharacterDelay: 0.1
-  WordDelay: 0.2
-  Tempo: 1
+  characterDelay: 0.1
+  wordDelay: 0.2
+  testText: This is a male test.
 --- !u!82 &742333082
 AudioSource:
   m_ObjectHideFlags: 0
@@ -493,9 +493,9 @@ MonoBehaviour:
   intonation: {fileID: 11400000, guid: 3b66d56ee52cf284f9fcf72677195a91, type: 2}
   pitch: 2.4
   volume: 1
-  CharacterDelay: 0.1
-  WordDelay: 0.2
-  Tempo: 1
+  characterDelay: 0.1
+  wordDelay: 0.2
+  testText: This is a female test.
 --- !u!82 &1065662907
 AudioSource:
   m_ObjectHideFlags: 0

@@ -30,16 +30,19 @@ public class Voice : MonoBehaviour
 
     [Header("Speed")]
 
+    [SerializeField]
     [Tooltip("Delay between characters. (seconds)")]
-    public float CharacterDelay = 0.1f;
+    private float characterDelay = 0.1f;
 
+    [SerializeField]
     [Tooltip("Delay between words. (seconds)")]
-    public float WordDelay = 0.2f;
-
-    [Tooltip("Scalar speed at which to speak the text, where 1 is normal speed.")]
-    public float Tempo = 1.0f;
+    private float wordDelay = 0.2f;
 
     private Coroutine speaking;
+
+    [Header("Testing")]
+    [SerializeField]
+    private string testText = "This is a test.";
 
     private void Awake()
     {
@@ -80,7 +83,7 @@ public class Voice : MonoBehaviour
             var character = text[index];
             if (char.IsWhiteSpace(character) || char.IsPunctuation(character))
             {
-                yield return new WaitForSeconds(WordDelay / Tempo);
+                yield return new WaitForSeconds(wordDelay);
             }
             else
             {
@@ -88,33 +91,33 @@ public class Voice : MonoBehaviour
                 audioSource.volume = volume;
                 intonation.Inflect(audioSource, style, index * step);
                 accent.Pronounce(audioSource, character);
-                yield return new WaitForSeconds(CharacterDelay / Tempo);
+                yield return new WaitForSeconds(characterDelay);
             }
         }
     }
 
-    [ContextMenu("Say a Statement")]
+    [ContextMenu("Say Test Statement")]
     private void SayStatement()
     {
-        Say("This is a statement.", Intonation.Style.Statement);
+        Say(testText, Intonation.Style.Statement);
     }
 
-    [ContextMenu("Say a Question")]
+    [ContextMenu("Say Test Question")]
     private void SayQuestion()
     {
-        Say("Is this a question?", Intonation.Style.Question);
+        Say(testText, Intonation.Style.Question);
     }
 
-    [ContextMenu("Say an Exclamation")]
+    [ContextMenu("Say Test Exclamation")]
     private void SayExclamation()
     {
-        Say("This is an exclamation!", Intonation.Style.Exclamation);
+        Say(testText, Intonation.Style.Exclamation);
     }
 
-    [ContextMenu("Say a Command")]
+    [ContextMenu("Say Test Command")]
     private void SayCommand()
     {
-        Say("Do this command.", Intonation.Style.Command);
+        Say(testText, Intonation.Style.Command);
     }
 
 
